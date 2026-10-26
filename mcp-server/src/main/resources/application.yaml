@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: mcp-server
+  threads:
+    virtual:
+      enabled: true
+  ai:
+    mcp:
+      server:
+        name: course-catalog
+        version: 1.0.0
+        type: SYNC
+        protocol: STREAMABLE
+        instructions: "Course catalog for an online academy. Use it to find courses and enroll students."

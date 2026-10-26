@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: mcp-client
+  threads:
+    virtual:
+      enabled: true
+  mvc:
+    problemdetails:
+      enabled: true
+  ai:
+    openai:
+      api-key: ${GROQ_API_KEY}
+      base-url: https://api.groq.com/openai/v1
+      chat:
+        model: openai/gpt-oss-120b
+    mcp:
+      client:
+        name: course-assistant
+        type: SYNC
+        streamable-http:
+          connections:
+            course-catalog:
+              url: http://localhost:8081
