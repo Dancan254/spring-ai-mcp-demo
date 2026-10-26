@@ -115,9 +115,3 @@ cd mcp-server && ./mvnw test
 
 [`CourseToolsIntegrationTest`](mcp-server/src/test/java/com/yourjavaguy/mcpserver/CourseToolsIntegrationTest.java)
 starts the server on a random port and talks to it with a real MCP client.
-
-## Out of scope (follow-up videos)
-
-- Securing the server (the `/mcp` endpoint is unauthenticated — localhost only)
-- Sampling and elicitation
-- Stateless servers
